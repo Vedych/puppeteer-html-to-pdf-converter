@@ -28,7 +28,7 @@ app.use(upload.array());
 app.use(express.static('static'))
 app.use(speedLimiter);
 
-app = require('./routes').register(app);
+require('./routes').register(app);
 
 app.use(express.static('static'));
 
